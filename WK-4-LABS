@@ -1,0 +1,43 @@
+************************
+*                      *
+*       TASK 1         *
+*                      *
+* **********************  
+import java.util.Scanner;
+class Laptop {
+private String brand;
+public Laptop(String brand) {
+this.brand = brand;
+}
+public void displayBrand() {
+System.out.println("Laptop Brand: " + brand);
+}
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter laptop's brand: ");
+String brand = scanner.nextLine();
+Laptop laptop = new Laptop(brand);
+laptop.displayBrand();
+}
+}
+************************
+*                      *
+*       TASK 2         *
+*                      *
+* **********************  
+public class PrintH {
+public static void main(String[] args)
+for (int i = 0; i < 5; i++)
+for (int j = 0; j < 6; j++) {
+if (j == 0 || j == 5 || i == 2) {
+System.out.print("*");
+} else {
+System.out.print(" ");
+}
+}
+System.out.println();
+}
+}
+}
+
+
