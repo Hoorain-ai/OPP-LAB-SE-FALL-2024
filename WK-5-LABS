@@ -1,0 +1,105 @@
+**********************
+*                    *
+*     TASK 1         *
+*                    *
+**********************
+public class Computer {
+public static void main(String[] args) {
+CPU cpu = new CPU("Intel", "3.4 GHz");
+RAM ram = new RAM("Corsair", "16");
+HardDrive hardDrive = new HardDrive("Samsung", "512");
+Components computer = new Components(cpu, ram, hardDrive);
+computer.displayComponents();
+}
+}
+public class CPU {
+private String brand;
+private String capacity; // Capacity can represent speed or core count
+public CPU(String brand, String capacity) {
+this.brand = brand;
+this.capacity = capacity;
+}
+public void displayDetails() {
+System.out.println("CPU Brand: " + brand + ", Capacity: " + capacity);
+}
+}
+public class RAM {
+private String brand;
+private String capacity; 
+public RAM(String brand, String capacity) {
+this.brand = brand;
+this.capacity = capacity;
+}
+public void displayDetails() {
+System.out.println("RAM Brand: " + brand + ", Capacity: " + capacity + "GB");
+}
+}
+public class HardDrive {
+private String brand;
+private String capacity; // Capacity in GB
+public HardDrive(String brand, String capacity) {
+this.brand = brand;
+this.capacity = capacity;
+}
+public void displayDetails() {
+System.out.println("Hard Drive Brand: " + brand + ", Capacity: " + capacity + "GB");
+}
+}
+public class Components {
+private CPU cpu;
+private RAM ram;
+private HardDrive hardDrive;
+public Components(CPU cpu, RAM ram, HardDrive hardDrive) {
+this.cpu = cpu;
+this.ram = ram;
+this.hardDrive = hardDrive;
+}
+public void displayComponents() {
+System.out.println("Computer Components:");
+cpu.displayDetails();
+ram.displayDetails();
+hardDrive.displayDetails();
+}
+}
+**********************
+*                    *
+*     TASK 2         *
+*                    *
+**********************
+public class Player {
+
+    String playerName;
+    String position;
+    
+Player(String playerName, String position)
+{
+    this.playerName = playerName;
+    this.position = position;
+}
+    void displayInfo(){
+       System.out.println("Hoorain: " + Athelte);
+       System.out.println("Farhana: " + defender);
+   }
+    
+    public static void main(String[] args){
+       Player p1  = new Player("Lewis", "2nd");
+       Player p2 = new Player("Kurt", "4th");
+       
+       Team t = new Team (p1);
+       Team t2 = new Team (p2);
+       
+       p1.displayInfo();
+       p2.displayInfo();
+    }
+}
+ 
+package player;
+
+public class Team {
+    Player player;
+    
+    Team(Player player)
+    {
+        this.player = player;
+    }
+
