@@ -1,0 +1,59 @@
+*****************************
+*                           *
+*           Task 1          *
+*                           *
+*****************************                      
+package studentclass;
+class Student {
+String name;
+String city;
+ int age;
+ public static void main(String[] args) {
+Student s1=new Student();
+  s1.name ="Arusa"; s1.city="Karachi";s1.age =18;
+  System.out.println( s1.name);
+  System.out.println( s1.city);
+  System.out.println(s1.age );
+  Student s2=new Student();
+  s2.name ="Hoorain";s2.city=”Lahore";s2.age=19;
+  System.out.println(s2.name );
+  System.out.println(s2.city );
+  System.out.println(s2.age );
+    }
+}
+*****************************
+*                           *
+*          TASK 2           *
+*                           *
+* ************************* *                       
+package area;
+public class Area{
+ int length;
+ int width;
+ public static void main(String[] args) {
+Area a1 = new Area();
+a1.length = 20 ; a1.width = 90;
+System.out.println("B ="+ a1.length*a1.width);    
+    }
+}
+*****************************
+*                           *
+*          TASK 3           *
+*                           *
+* ************************* *  
+public class Computer {
+String name;
+    String config;
+    int cost;
+    String os;
+    public static void main(String[] args){
+        Computer c1= new Computer();
+        c1.name = "Apple";c1.config = "i5";c1.cost =50000;c1.os = "IOS";
+        System.out.println("The company name is"+c1.name);
+        System.out.println("The configuration"+c1.config);
+        System.out.println("The cost of computer is"+c1.cost);
+        System.out.println("The operating system is"+c1.os);
+        
+    }
+}
+
